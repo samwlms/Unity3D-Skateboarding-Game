@@ -3,25 +3,32 @@
 //project: Assignment 2 - inft3960
 
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.Collections;
-using System.Collections.Generic;
-public class ThadController : MonoBehaviour
-{    
-    public float speed;
-    private Transform target;
 
-    
+public class ThadController : MonoBehaviour
+{
+    //Class variables
+    public float speed;
+    public GameObject skater;
+    private Transform dest;
+    Renderer camera_view;
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        //set the destination position of Thad based off current user position
+        dest = skater.GetComponent<Transform>();
+        //camera_view variable defines current screen space being rendered
+        camera_view = GetComponent<Renderer>();
     }
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed*Time.deltaTime);
+        //check to see if Thad is currently visible on screen
+        if (camera_view.isVisible)
+        {
+            //if he is, move towards the skater at user defined speed coefficent
+            transform.position = Vector2.MoveTowards(transform.position, dest.position, speed * Time.deltaTime);
+
+        }
     }
-    
-    
+
+
 }
