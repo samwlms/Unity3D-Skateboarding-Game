@@ -7,12 +7,12 @@ using UnityEngine;
 public class VehincleController : MonoBehaviour
 {
     //set the speed the vehicle will travel
-    public float Speed = 0.005f;
+    public float speed;
 
     void Update()
     {
         //Move the vehicle along a set X-axis path
-        gameObject.transform.position += new Vector3(-Speed,0f,0f); //delatTime normalises speed across systems
+        gameObject.transform.position += new Vector3(speed * Time.deltaTime,0f,0f); //delatTime normalises speed across systems
     }
     
     void OnCollisionEnter2D(Collision2D col)
@@ -21,7 +21,7 @@ public class VehincleController : MonoBehaviour
         if(col.transform.CompareTag("VehicleBounds"))
         {
             //inverse the speed
-            Speed = -Speed;
+            speed = -speed;
             //flip vehicle horizontally
             Vector3 theScale = transform.localScale;
 		    theScale.x *= -1;
