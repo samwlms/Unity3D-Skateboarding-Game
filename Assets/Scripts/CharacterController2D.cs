@@ -1,7 +1,7 @@
 //sourced from: Unity Standard Assets
 //modified by: Sam williams 
 //email: swilliams9uon.edu.au
-//project: Assignment 2 - inft3960
+//project: Assignment 3 - inft3960
 
 using UnityEngine;
 using UnityEngine.Events;
