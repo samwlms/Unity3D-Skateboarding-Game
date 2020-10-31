@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4337867981313909146}
   - component: {fileID: 4337867981313909149}
   - component: {fileID: 4337867981313909147}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Thad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -894852015
-  m_SortingLayer: 2
+  m_SortingLayerID: 1664300253
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -8907026572676914874, guid: b46fa7a3560a23843b323326a76d3dfd,
     type: 3}
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  skater: {fileID: 0}
 --- !u!61 &4337867981313909146
 BoxCollider2D:
   m_ObjectHideFlags: 0

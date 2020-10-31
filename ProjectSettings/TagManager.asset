@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DeadZone
   - Vehicle
+  - VehicleBounds
   layers:
   - Default
   - TransparentFX
@@ -17,10 +18,10 @@ TagManager:
   - 
   - Player
   - Ground
-  - 
-  - 
-  - 
-  - 
+  - Thad
+  - Vehicle
+  - VehicleBounds
+  - PlayerBounds
   - 
   - 
   - 
