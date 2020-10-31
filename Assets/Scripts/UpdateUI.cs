@@ -1,20 +1,15 @@
 ﻿//written by: Sam williams 
 //email: swilliams9uon.edu.au
-//project: Assignment 2 - inft3960
+//project: Assignment 3 - inft3960
 
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.Collections;
+
 public class UpdateUI : MonoBehaviour
 {    
+    //class variables
     private int pizzaCount = 0;
     private Text pizzaText;
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         pizzaCount = gameObject.GetComponentInParent<PlayerMovement>().PizzaCount;

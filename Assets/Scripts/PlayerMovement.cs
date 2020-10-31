@@ -1,9 +1,7 @@
 ﻿//written by: Sam williams 
 //email: swilliams9uon.edu.au
-//project: Assignment 2 - inft3960
+//project: Assignment 3 - inft3960
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -19,25 +17,22 @@ public class PlayerMovement : MonoBehaviour
     public int Ammo = 5;
 
 
-    // Update is called once per frame
     void Update()
     {
-        
-        Xmove = Input.GetAxisRaw("Horizontal")*40f;
+
+        Xmove = Input.GetAxisRaw("Horizontal") * 40f;
 
         if (Input.GetButtonDown("Jump"))
         {
             Ollie = true;
-            animator.SetBool("IsJumping", true); 
+            animator.SetBool("IsJumping", true);
         }
- 
 
-        
     }
 
     void FixedUpdate()
     {
-        myController.Move(Xmove*Time.fixedDeltaTime, Ollie);
+        myController.Move(Xmove * Time.fixedDeltaTime, Ollie);
         Ollie = false;
     }
 
