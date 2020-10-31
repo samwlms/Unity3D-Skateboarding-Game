@@ -1,19 +1,20 @@
 ﻿//written by: Sam williams 
 //email: swilliams9uon.edu.au
-//project: Assignment 2 - inft3960
+//project: Assignment 3 - inft3960
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class KillPlayer : MonoBehaviour
 {
+    //set the spawn point to return the player to
     [SerializeField]Transform SpawnPoint;
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        //if player collides with 'killplayer' gameobject..
         if(col.transform.CompareTag("Player"))
         {
+            //move the payer back to the spawn point
             col.transform.position = SpawnPoint.position;
         }
     }
