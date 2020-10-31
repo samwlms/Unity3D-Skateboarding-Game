@@ -9,6 +9,10 @@ using UnityEngine.SceneManagement;
 //values are updated upon finishing the level via the finishLine.cs script associated with the 'finish line' gameobject
 public class GlobalVariables : MonoBehaviour
 {
-   
+   public int CurrentLevel = 69;
+   void Start()
+   {
+       GameObject.DontDestroyOnLoad(this.gameObject);
+   }
     
 }
