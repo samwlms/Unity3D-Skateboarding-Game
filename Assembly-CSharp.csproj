@@ -45,6 +45,7 @@
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\UpdateUI.cs" />
      <Compile Include="Assets\Scripts\ThadController.cs" />
+     <Compile Include="Assets\Scripts\GlobalVariables.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
