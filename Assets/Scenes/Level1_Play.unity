@@ -2553,6 +2553,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlobalVars
       objectReference: {fileID: 0}
+    - target: {fileID: 5655295484410941185, guid: e16380fbc69e40141867c6e8ae93954f,
+        type: 3}
+      propertyPath: CurrentLevel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5655295484410941190, guid: e16380fbc69e40141867c6e8ae93954f,
         type: 3}
       propertyPath: m_LocalPosition.x
