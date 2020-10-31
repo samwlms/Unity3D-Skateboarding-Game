@@ -1,5 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//written by: Sam williams 
+//email: swilliams9uon.edu.au
+//project: Assignment 3 - inft3960
+
 using UnityEngine;
 
 public class CollectablePizza : MonoBehaviour
