@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float Xmove = 0f;
     public bool Ollie = false;
     public int PizzaCount = 0;
-    public int DeathCount = 0;
+    public int PlayerLives = 3;
     public int Ammo = 5;
 
 
