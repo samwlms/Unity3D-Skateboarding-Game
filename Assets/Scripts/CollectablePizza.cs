@@ -16,7 +16,6 @@ public class CollectablePizza : MonoBehaviour
     void Start()
     {
         globalVars = FindObjectOfType<GlobalVariables>();
-        Debug.Log("globalVars.CurrentLevel: " + globalVars.CurrentLevel);
     }
 
     void Update()
@@ -49,7 +48,11 @@ public class CollectablePizza : MonoBehaviour
             //play the audio file associated with the pizza
             AudioSource.PlayClipAtPoint(clip, transform.position, volume);
 
-            //add a death to the global variables counter in the persistent gameobject
+            //add to the count of the level specific pizza counter (not global or persistant)
+            col.gameObject.GetComponent<PlayerMovement>().PizzaCount++;
+
+
+            //add a pizza to the global variables counter in the persistent gameobject
             globalVars.pizzas++;
 
             Destroy(gameObject);
