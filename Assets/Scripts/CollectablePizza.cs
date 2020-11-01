@@ -45,6 +45,8 @@ public class CollectablePizza : MonoBehaviour
     {
         if (col.transform.CompareTag("Player"))
         {
+            Destroy(gameObject);
+            
             //play the audio file associated with the pizza
             AudioSource.PlayClipAtPoint(clip, transform.position, volume);
 
@@ -55,7 +57,6 @@ public class CollectablePizza : MonoBehaviour
             //add a pizza to the global variables counter in the persistent gameobject
             globalVars.pizzas++;
 
-            Destroy(gameObject);
         }
     }
 }
