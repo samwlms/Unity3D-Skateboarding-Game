@@ -7,16 +7,18 @@ using UnityEngine;
 public class CollectablePizza : MonoBehaviour
 {
     public AudioClip clip;
-    private bool grow = true;
-    private Vector3 growRate = new Vector3(0.0005f, 0.0005f, 0f);
     private float volume = 2f;
     private GlobalVariables globalVars;
+
+    //the following 2 variables handle the dynamic animation of the pizza
+    private bool grow = true;
+    private Vector3 growRate = new Vector3(0.0005f, 0.0005f, 0f);
     void Start()
     {
         globalVars = FindObjectOfType<GlobalVariables>();
+        Debug.Log("globalVars.CurrentLevel: " + globalVars.CurrentLevel);
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -44,8 +46,12 @@ public class CollectablePizza : MonoBehaviour
     {
         if (col.transform.CompareTag("Player"))
         {
+            //play the audio file associated with the pizza
             AudioSource.PlayClipAtPoint(clip, transform.position, volume);
-            col.gameObject.GetComponent<PlayerMovement>().PizzaCount++;
+
+            //add a death to the global variables counter in the persistent gameobject
+            globalVars.pizzas++;
+
             Destroy(gameObject);
         }
     }
