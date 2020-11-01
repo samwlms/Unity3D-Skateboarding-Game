@@ -10,6 +10,8 @@ using UnityEngine.SceneManagement;
 public class GlobalVariables : MonoBehaviour
 {
    public int CurrentLevel = 2;
+   public int pizzas = 0;
+   public int deaths = 0;
    void Start()
    {
        GameObject.DontDestroyOnLoad(this.gameObject);
