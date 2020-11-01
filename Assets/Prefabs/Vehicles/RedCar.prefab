@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1741755107205133938}
   - component: {fileID: 5024965069793067324}
   - component: {fileID: -443421718899541412}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RedCar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

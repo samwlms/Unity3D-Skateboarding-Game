@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4172107573137424566}
   - component: {fileID: 7914483008966121611}
   - component: {fileID: 8920612250248011448}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bus
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
