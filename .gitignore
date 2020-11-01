@@ -2,7 +2,4 @@ Logs/
 Temp/
 .vscode/
 .vs/
-/Library/Artifacts/
-/Library/TempArtifacts/
-/Library/metadata/
 *.sln
