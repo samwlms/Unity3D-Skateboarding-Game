@@ -1,5 +1,6 @@
 Logs/
 Temp/
+Library/EditorInstance.json
 .vscode/
 .vs/
 *.sln
