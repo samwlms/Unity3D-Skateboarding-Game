@@ -2,4 +2,8 @@ Logs/
 Temp/
 .vscode/
 .vs/
+/Library/Artifacts/
+/Library/TempArtifacts/
+/Library/Artifacts/
+/Library/metadata/
 *.sln
