@@ -8,9 +8,13 @@ public class CollectablePizza : MonoBehaviour
 {
     public AudioClip clip;
     private bool grow = true;
-    private Vector3 growRate = new Vector3(0.0005f,0.0005f,0f);
+    private Vector3 growRate = new Vector3(0.0005f, 0.0005f, 0f);
     private float volume = 2f;
-
+    private GlobalVariables globalVars;
+    void Start()
+    {
+        globalVars = FindObjectOfType<GlobalVariables>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -19,7 +23,7 @@ public class CollectablePizza : MonoBehaviour
         if (grow)
         {
             gameObject.transform.localScale += growRate;
-            if(gameObject.transform.localScale.x > .5f)
+            if (gameObject.transform.localScale.x > .5f)
             {
                 grow = false;
             }
@@ -28,7 +32,7 @@ public class CollectablePizza : MonoBehaviour
         else
         {
             gameObject.transform.localScale -= growRate;
-            if(gameObject.transform.localScale.x < .3f)
+            if (gameObject.transform.localScale.x < .3f)
             {
                 grow = true;
             }
@@ -38,7 +42,7 @@ public class CollectablePizza : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if(col.transform.CompareTag("Player"))
+        if (col.transform.CompareTag("Player"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position, volume);
             col.gameObject.GetComponent<PlayerMovement>().PizzaCount++;
