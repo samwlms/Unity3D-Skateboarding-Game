@@ -163,7 +163,7 @@ PrefabInstance:
     - target: {fileID: 7145705413543233843, guid: fa31709b98dfc394f914c9a4d17d3b5f,
         type: 3}
       propertyPath: IndexOfLevelEndScene
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7145705413543233845, guid: fa31709b98dfc394f914c9a4d17d3b5f,
         type: 3}
