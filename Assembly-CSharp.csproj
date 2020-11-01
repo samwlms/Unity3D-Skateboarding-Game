@@ -39,15 +39,15 @@
      <Compile Include="Assets\Scripts\CharacterController2D.cs" />
      <Compile Include="Assets\Scripts\KillPlayer.cs" />
      <Compile Include="Assets\Scripts\FinishLine.cs" />
+     <Compile Include="Assets\Scripts\ThadController.cs" />
+     <Compile Include="Assets\Scripts\GetContext.cs" />
      <Compile Include="Assets\Scripts\CollectablePizza.cs" />
+     <Compile Include="Assets\Scripts\GetScores.cs" />
+     <Compile Include="Assets\Scripts\GlobalVariables.cs" />
      <Compile Include="Assets\Scripts\VehincleController.cs" />
      <Compile Include="Assets\Scripts\ButtonScript.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\UpdateUI.cs" />
-     <Compile Include="Assets\Scripts\ThadController.cs" />
-     <Compile Include="Assets\Scripts\GlobalVariables.cs" />
-     <Compile Include="Assets\Scripts\GetContext.cs" />
-     <Compile Include="Assets\Scripts\GetScores.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
