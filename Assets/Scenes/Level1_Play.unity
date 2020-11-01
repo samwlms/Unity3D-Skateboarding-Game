@@ -1851,6 +1851,11 @@ PrefabInstance:
       propertyPath: Speed
       value: -0.006
       objectReference: {fileID: 0}
+    - target: {fileID: 7914483008966121611, guid: 1d6bc33eda48bd3459da8e0fa6ffa8a7,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8920612250248011448, guid: 1d6bc33eda48bd3459da8e0fa6ffa8a7,
         type: 3}
       propertyPath: SpawnPoint

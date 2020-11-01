@@ -47,6 +47,7 @@
      <Compile Include="Assets\Scripts\ThadController.cs" />
      <Compile Include="Assets\Scripts\GlobalVariables.cs" />
      <Compile Include="Assets\Scripts\GetContext.cs" />
+     <Compile Include="Assets\Scripts\GetScores.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
