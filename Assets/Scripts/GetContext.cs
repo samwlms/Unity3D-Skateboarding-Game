@@ -15,10 +15,7 @@ public class GetContext : MonoBehaviour
     {
         GlobalVariables globalVars = FindObjectOfType<GlobalVariables>();
         globalVars.CurrentLevel++;
-        int currentLevel = globalVars.CurrentLevel;
-        Debug.Log("The 'getContext' script has initialised");
-        Debug.Log("The current level stored is: "+currentLevel);
-        localInstance.SceneIndexToLoad = currentLevel;
+        localInstance.SceneIndexToLoad = globalVars.CurrentLevel;
 
     }
 
