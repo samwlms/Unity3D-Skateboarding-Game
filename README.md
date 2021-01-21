@@ -9,7 +9,7 @@
 
 ## Overview
 
-'City Skate' was my first introduction and learning exercise in utilising the Unity3D development environment and engine. The is a simple 2D platformer which gives players the experience of navigating through various urban environments as they collect 'power-ups' and avoid enemies to reach a marked checkpoint at the end of each level. It has been a fun experience getting to know the workings of the Unity engine, while also refining my programming skills in the C# language. 
+'City Skate' was my first introduction and learning exercise in utilising the Unity3D development environment and engine. The game is a simple 2D platformer which gives players the experience of navigating through various urban environments as they collect 'power-ups' and avoid enemies to reach a marked checkpoint at the end of each level. It has been a fun experience getting to know the workings of the Unity engine, while also refining my programming skills in the C# language. 
 
 **Have fun!**
 
