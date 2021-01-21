@@ -1,4 +1,5 @@
 
+
 # City Skate
 
 ### A simple 2D Skateboarding game built using the unity development engine
@@ -14,8 +15,21 @@
 
 ## Level Backgrounds
 
+*All art in game is produced by myself (in microsoft paint :sunglasses:)*
+
 ![game_image](https://github.com/samwlms/2D-Skate-Game/blob/main/Assets/Backgrounds/level_1.png)
+*Level 1*
 
 ![game_image](https://github.com/samwlms/2D-Skate-Game/blob/main/Assets/Backgrounds/level_2.png)
+*Level 2*
 
 ![game_image](https://github.com/samwlms/2D-Skate-Game/blob/main/Assets/Backgrounds/level_3.png)
+*Level 3*
+
+## Sprite Sheets
+
+![game_image](https://github.com/samwlms/2D-Skate-Game/blob/main/Assets/Images/SpriteSheets/skater_jump.png)
+*Skater jumping*
+
+![game_image](https://github.com/samwlms/2D-Skate-Game/blob/main/Assets/Images/SpriteSheets/thad_angry.png)
+*Angry security guard*
